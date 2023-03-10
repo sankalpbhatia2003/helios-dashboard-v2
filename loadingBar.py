@@ -1,8 +1,6 @@
 import typer
 import time
 
-app = typer.Typer()
-
 def update_loading_bar(progress):
     bar_length = 40
     filled_length = int(progress * bar_length)
@@ -12,7 +10,6 @@ def update_loading_bar(progress):
     bar = bar_fill * filled_length + bar_empty * empty_length
     return f"\rLoading... ║ {bar} {progress:.0%} ║"
 
-@app.command()
 def loading_bar():
     start_time = time.time()
     end_time = start_time + 40
@@ -22,6 +19,3 @@ def loading_bar():
         progress = elapsed_time / 40
         typer.echo(update_loading_bar(progress), nl=False)
         time.sleep(0.1)
-
-if __name__ == "__main__":
-    app()
