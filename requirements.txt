@@ -85,4 +85,4 @@ zope.interface==5.5.1
 deepgram-sdk==2.3.0
 nltk==3.8.1
 matplotlib==3.7.1
-type==0.7.0
+type
