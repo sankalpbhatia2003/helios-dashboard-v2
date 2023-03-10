@@ -1,4 +1,3 @@
-import typer
 import time
 
 def update_loading_bar(progress):
