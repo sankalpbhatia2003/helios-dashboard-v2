@@ -1,6 +1,7 @@
 #import uploadDescriptor
 import os
 #from createTask import taskId
+import typer
 import json
 import time
 import requests
@@ -8,7 +9,6 @@ from getResults import get_result
 from dotenv import load_dotenv
 from loadingBar import loading_bar
 import streamlit as st
-import typer
 import pprint
 
 load_dotenv()
