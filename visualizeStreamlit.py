@@ -65,7 +65,7 @@ def query(filename):
     response = requests.post(API_URL, headers=headers, data=data)
     return response.json()
 
-response = query("temp.mp3")
+response = query(audio_file_path)
 # Parse the JSON response
 # Convert dictionary to JSON string
 #json_str = json.dumps(response)
