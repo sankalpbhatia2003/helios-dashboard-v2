@@ -40,7 +40,7 @@ if audio_file is not None:
         f.write(audio_file.getbuffer())
     
     # Get the absolute path of the uploaded file
-    audio_file_path = os.path.abspath("temp.mp3")
+    audio_file_path = "/app/helios-dashboard-v2/temp.mp3" #os.path.abspath("temp.mp3")
     st.write("File path:", audio_file_path)
     #main_file_commands(audio_file_path)
 else:
