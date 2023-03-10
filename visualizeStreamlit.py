@@ -30,8 +30,6 @@ with st.expander("See Explanation"):
 with st.expander("ℹ️ Information about the Emotion Classifier"):
     st.info(emotion_classifier)
 
-emotion = 'Disgust'
-
 #st.video('https://youtu.be/{}'.format(youtube_code)) 
 
 audio_file = st.file_uploader("Drop your MP3 file here", type=['MP3'], accept_multiple_files=False)
